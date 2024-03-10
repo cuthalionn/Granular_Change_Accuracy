@@ -2,7 +2,7 @@
 
 Granular Change Accuracy official implementation.
 
-## Installation
+## Installation and Setup
 Clone the repository and change directory:
 ```bash
 cd GCA
@@ -26,6 +26,8 @@ python src/compute_accuracies.py "path_to_data_folder"
 Check [data](data/) folder for data format sample.
 
 ## Additional Figures
+
+Download `data.json` and `test_dials.json` for Multiwoz from this [link](https://drive.google.com/drive/folders/1B6tLIfQh31OcujmyPPzIwCPdaq7ZcEt9?usp=sharing) to `data` folder before starting analysis.
 
 All figures from the paper can be generated using the notebooks in the `scripts` folder. The resulting figures will be saved under `analyses`.
 

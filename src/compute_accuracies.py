@@ -138,9 +138,10 @@ def getModifiedBS(bs):
             bs_new[k][sl] = v
     return bs_new
 
-def getModelAccuracy(dst_res_path, dialog_data):
+def getModelAccuracy(dst_res_path):
     # dst_res_path = os.path.join(model_name, model_name+"_result.json")
     dst_res = loadJson(dst_res_path)
+    # print(f"Total Dialogues: {len(dst_res)}"
     
     joint_acc = 0
     slot_acc = 0
@@ -154,7 +155,6 @@ def getModelAccuracy(dst_res_path, dialog_data):
     dial_metrics = {}
     for idx in dst_res:
         res = dst_res[idx]
-        # log = dialog_data[idx]['log']
         sys = " "
         
         gt_list = []
@@ -165,22 +165,12 @@ def getModelAccuracy(dst_res_path, dialog_data):
         for turn in res:
             total_dial += 1
             total+=1
-            # i = 2*int(turn)
-            # usr = log[i]['text'].strip()
-            # if(i>0):
-                # sys = log[i-1]['text'].strip()
 
             gt = getBeliefSet(res[turn]['gt'])
             pr = getBeliefSet(res[turn]['pr'])
 
             gt_list.append(gt)
             pr_list.append(pr)
-
-            #print(f"Sys_{turn}: {sys}")
-            #print(f"Usr_{turn}: {usr}")
-            #print(f"GT_{turn}: {getModifiedBS(res[turn]['gt'])}")
-            #print(f"PR_{turn}: {getModifiedBS(res[turn]['pr'])}")
-            #print("-"*40)
 
             diff = gt.symmetric_difference(pr)
             m = 1 if len(diff)==0 else 0
@@ -246,8 +236,6 @@ def getModelAccuracy(dst_res_path, dialog_data):
 def main():
     #Load raw data
 
-    dialog_data_file = os.path.join("data",'data.json')
-    dialog_data = loadJson(dialog_data_file)
     file_name = sys.argv[1]
     folder_name = os.path.join("data", file_name)
     result_folder = os.path.join("results", file_name)
@@ -258,7 +246,7 @@ def main():
     for i,file in enumerate(eval_file_dir):
         print("-"*40)
         print("Results for {} :-".format(file))
-        result_dic,_ = getModelAccuracy(os.path.join(folder_name,file),  dialog_data)
+        result_dic,_ = getModelAccuracy(os.path.join(folder_name,file))
 
         data = json.load(open(os.path.join(folder_name,file),'r'))
         gca_metric,_,_, _ = compute_gca(data)
