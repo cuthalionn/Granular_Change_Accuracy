@@ -2,7 +2,7 @@
 
 Granular Change Accuracy official implementation.
 
-## Installation and Setup
+## Installation
 Clone the repository and change directory:
 ```bash
 cd GCA
@@ -15,8 +15,6 @@ conda activate env
 pip install -r requirements.txt
 pip install -e . 
 ```
-
-download [data.json](https://drive.google.com/file/d/1Kr5Lu-HsobLA6IFLa5XGkhkSdXZzJmed/view?usp=sharing) for Multiwoz Analysis to `data` folder.
 
 ## Usage
 Change directory into the main folder in the repository 
