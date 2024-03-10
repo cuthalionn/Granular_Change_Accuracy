@@ -1,0 +1,55 @@
+{
+    "MUL0003.json": {
+        "0": {
+            "gt": {
+                "hotel": {
+                    "internet": "yes"
+                }
+            },
+            "pr": {
+                "hotel": {
+                    "internet": "no"
+                }
+            }
+        },
+        "1": {
+            "gt": {
+                "hotel": {
+                    "internet": "yes",
+                    "parking": "yes"
+                }
+            },
+            "pr": {
+                "hotel": {
+                    "internet": "no",
+                    "parking": "no"
+                }
+            }
+        },
+        "2": {
+            "gt": {
+                "hotel": {
+                    "internet": "yes",
+                    "parking": "yes",
+                    "book day": "sunday",
+                    "book people": "6",
+                    "book stay": "4",
+                    "pricerange": "cheap",
+                    "type": "guest house"
+                }
+            },
+            "pr": {
+                "hotel": {
+                    "internet": "no",
+                    "parking": "no",
+                    "book day": "sunday",
+                    "book people": "6",
+                    "book stay": "4",
+                    "pricerange": "cheap",
+                    "type": "guest house"
+                }
+            }
+        }
+    }
+    
+}

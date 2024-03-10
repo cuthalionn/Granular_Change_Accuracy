@@ -1,0 +1,122 @@
+{
+    "MUL0003.json": {
+        "0": {
+            "gt": {
+            },
+            "pr": {
+            }
+        },  
+        "1": {
+            "gt": {
+                "hotel": {
+                    "name": "cityroomz"
+                }
+            },
+            "pr": {
+                "hotel": {
+                    "name": "twente"
+                }
+            }
+        },
+        "2": {
+            "gt": {
+                "hotel": {
+                    "name": "cityroomz",
+                    "area": "centre",
+                    "day": "wednesday",
+                    "people":"4",
+                    "stay":"2",
+                    "stars":"0"
+                }
+            },
+            "pr": {
+                "hotel": {
+                    "name": "twente",
+                    "day": "wednesday",
+                    "people":"3",
+                    "stay":"2"
+                }
+            }
+        },
+        "3": {
+            "gt": {
+                "hotel": {
+                    "name": "cityroomz",
+                    "area": "centre",
+                    "day": "wednesday",
+                    "people":"4",
+                    "stay":"2",
+                    "stars":"0"
+                },
+                "attraction":{
+                    "area":"centre"
+                }
+            },
+            "pr": {
+                "hotel": {
+                    "name": "twente",
+                    "day": "wednesday",
+                    "people":"3",
+                    "stay":"2"
+                },
+                "attraction":{
+                    "area":"centre"
+                }
+            }
+        },
+        "4": {
+            "gt": {
+                "hotel": {
+                    "name": "cityroomz",
+                    "area": "centre",
+                    "day": "wednesday",
+                    "people":"4",
+                    "stay":"2",
+                    "stars":"0"
+                },
+                "attraction":{
+                    "area":"centre"
+                }
+            },
+            "pr": {
+                "hotel": {
+                    "name": "twente",
+                    "day": "wednesday",
+                    "people":"3",
+                    "stay":"2"
+                },
+                "attraction":{
+                    "area":"centre",
+                    "name":"all saints church"
+                }
+            }
+        },
+        "5": {
+            "gt": {
+                "hotel": {
+                    "name": "cityroomz",
+                    "area": "centre",
+                    "day": "wednesday",
+                    "people":"4",
+                    "stay":"2",
+                    "stars":"0"
+                },
+                "attraction":{
+                    "area":"centre"
+                }
+            },
+            "pr": {
+                "hotel": {
+                    "name": "twente",
+                    "day": "wednesday",
+                    "people":"3",
+                    "stay":"2"
+                },
+                "attraction":{
+                    "area":"centre",
+                    "name":"all saints church"
+                }
+            }
+        }
+    }
+}
