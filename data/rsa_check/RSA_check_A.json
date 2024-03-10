@@ -1,0 +1,23 @@
+{
+    "MUL0003.json": {
+        "0": {
+            "gt": {
+                "restaurant": {
+                    "area": "center",
+                    "food":"indian",
+                    "people":"2"
+                }
+            },
+            "pr": {
+                "restaurant": {
+                    "area": "center",
+                    "food":"chinese"
+                },
+                "attraction":{
+                    "area":"center"
+                }
+            }
+        }
+    }
+    
+}
