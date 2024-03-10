@@ -1,0 +1,43 @@
+{
+    "MUL0003.json": {
+        "0": {
+            "gt": {
+                "hotel": {
+                    "internet": "yes"
+                }
+            },
+            "pr": {
+                "hotel": {
+                    "internet": "no"
+                }
+            }
+        },
+        "1": {
+            "gt": {
+                "hotel": {
+                    "internet": "yes"
+                }
+            },
+            "pr": {
+                "hotel": {
+                    "internet": "no"
+                }
+            }
+        },
+        "2": {
+            "gt": {
+                "hotel": {
+                    "internet": "yes",
+                    "parking": "yes"
+                }
+            },
+            "pr": {
+                "hotel": {
+                    "internet": "no",
+                    "parking": "yes"
+                }
+            }
+        }
+    }
+    
+}
