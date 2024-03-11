@@ -19,7 +19,7 @@ pip install -e .
 ## Usage
 Change directory into the main folder in the repository 
 ```bash
-cd GCA
+cd Granular_Change_Accuracy
 python src/compute_accuracies.py "path_to_data_folder"
 ```
 
