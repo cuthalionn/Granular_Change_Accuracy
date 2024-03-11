@@ -5,7 +5,7 @@ Granular Change Accuracy official implementation.
 ## Installation and Setup
 Clone the repository and change directory:
 ```bash
-cd GCA
+cd Granular_Change_Accuracy
 ```
 Then create new environment and install dependencies:
 
