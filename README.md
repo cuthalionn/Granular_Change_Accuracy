@@ -17,10 +17,14 @@ pip install -e .
 ```
 
 ## Usage
-Change directory into the main folder in the repository 
+Change directory into the main folder in the repository.
 ```bash
 cd Granular_Change_Accuracy
-python src/compute_accuracies.py "path_to_data_folder"
+python src/compute_accuracies.py "folder_name"
+```
+The folder should be in `./data`. For example:
+```bash
+python src/compute_accuracies.py T5
 ```
 
 Check [data](data/) folder for data format sample.
